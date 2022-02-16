@@ -15,8 +15,6 @@ meus conhecimentos de front-end.
 -   JS
 -   
 
-[MobileIdeias2001](https://user-images.githubusercontent.com/51915862/154174145-3bab5584-3473-4966-a2d7-b16746c1efed.PNG)
-
 
 🎯  **Objetivo:**  Bem, tenho como função desenvolver uma interface bem limpa, rápida e responsiva.  
 
