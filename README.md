@@ -1,8 +1,6 @@
 ![desktopIdeias2001](https://user-images.githubusercontent.com/51915862/154173700-c17b710f-59dd-4a30-9ba8-01f552800609.PNG)
 
 
-<figure>![MobileIdeias2001](https://user-images.githubusercontent.com/51915862/154174145-3bab5584-3473-4966-a2d7-b16746c1efed.PNG)</figure>
-
 
 
 ### ✍️**Descrição:**
@@ -15,6 +13,9 @@ meus conhecimentos de front-end.
 -   HTML 5
 -   CSS3
 -   JS
+-   
+
+[MobileIdeias2001](https://user-images.githubusercontent.com/51915862/154174145-3bab5584-3473-4966-a2d7-b16746c1efed.PNG)
 
 
 🎯  **Objetivo:**  Bem, tenho como função desenvolver uma interface bem limpa, rápida e responsiva.  
