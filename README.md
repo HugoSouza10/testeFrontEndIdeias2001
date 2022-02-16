@@ -15,6 +15,7 @@ meus conhecimentos de front-end.
 
 🎯  **Objetivo:**  Bem, tenho como função desenvolver uma interface bem limpa, rápida e responsiva.  
 
+
 ✍️  **Processo de criação:**
 
 Primeiramente comecei identificando os padrões de cores do layout e coloquei em uma variável no css para ficar mais fácil a manutenção do código. Usei flexbox e um pouco de css grid para alinhar a interface conforme a necessidade, além de media queries para deixar a interface super responsiva. Apliquei bons padrões de código como tag semâticas, indentação adequada e uso do ecmascript mais recente.😄
