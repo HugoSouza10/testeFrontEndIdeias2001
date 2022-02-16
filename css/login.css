@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorDefault: #fff;
+    --colorPrimary:#F08910;
+    --colorDark:#111111;
+    --colorLink: #8a8a8a;
+    --colorBody:#F1F1F1;
+    --colorBorder:#eeecec;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--colorPrimary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: var(--colorDefault);
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+form input{
+    margin:10px 0px 10px 0;;
+    padding: 5px;
+}
+
+form button{
+    padding: 5px;
+    border: none;
+    background-color: var(--colorPrimary);
+    color: var(--colorDefault);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover{
+    transition: 0.5s ease;
+    background-color: var(--colorDark);
+}
+
+form .logo{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.infoLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.infoLogin a{
+    text-decoration: none;
+    color: var(--colorLink);
+}
+
+form label{
+    color: var(--colorLink);
+    display: flex;
+    flex-direction: column;
+}

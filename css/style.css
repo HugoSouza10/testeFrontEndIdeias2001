@@ -1,0 +1,331 @@
+:root{
+    --colorDefault: #fff;
+    --colorPrimary:#F08910;
+    --colorDark:#111111;
+    --colorLink: #8a8a8a;
+    --colorBody:#F1F1F1;
+    --colorBorder:#eeecec;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header .menuMobile{
+    width: 20px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/*Removendo link sair*/
+
+header nav a:last-child{
+    display: none;
+}
+
+/*Classe para abrir o menu mobile*/
+.menuBoxOppened{
+    width: 100% !important;
+}
+
+.menuNavOpened{
+    width: 50%;
+    padding: 20px;
+}
+
+
+
+
+header .menuMobile .line{
+    background-color: var(--colorPrimary);
+    width: 100%;
+    height: 3px;
+}
+
+
+
+.active{
+    border-bottom: 3px solid var(--colorPrimary);
+    color:var(--colorDark) ;
+}
+
+/*Principal*/
+
+main{
+   margin: auto;
+   margin-top: -80px;
+   display: flex;
+   justify-content: center;
+   max-width: 1024px;
+   background-color: var(--colorDefault);
+}
+
+.main--container{
+  text-align: center;
+  width: 100%;
+}
+
+
+/*Serviços */
+
+main .card--Services{
+    cursor: pointer;
+    padding: 60px;
+    border-radius: 10%;
+    border:2px solid var(--colorBorder);
+    background: rgb(215,215,215);
+    background: linear-gradient(-11deg, rgba(215,215,215,0.47692580450148814) 0%, rgba(232,232,232,0.6702031154258579) 49%, rgba(252,252,252,1) 100%);
+}
+
+main .card--Services:hover{
+    transition: 0.7s ease;
+    transform: scale(1.1);
+}
+
+
+
+
+main .services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 44px;
+    padding: 0 50px 0;
+    margin: 130px 0 130px 0;
+}
+
+.main--container .title--main{
+    margin: 130px 0 60px 0;
+}
+
+.main--container  .card--Services .Service--text{
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--colorBody);
+}
+
+header{
+    background-color: var(--colorDefault);
+}
+
+header .container--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
+    max-width: 1024px;
+    
+}
+
+
+/*Menu*/
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease-in;
+}
+
+header nav ul a{
+    margin-right: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorLink);
+}
+
+
+header nav ul a:hover{
+    border-bottom: 3px solid var(--colorPrimary);
+    color: var(--colorDark);
+}
+
+/*Usuario*/
+
+header .login{
+    display: flex;
+}
+
+header .box--textLogin{
+    text-align: right;
+}
+
+header .login .box--Avatar img{
+    margin-right: 10px;
+}
+
+.btn--login{
+    color: var(--colorPrimary);
+    font-size: 14px;
+}
+
+
+.box--header{
+    position: relative;
+    z-index: -999;
+    background-color: var(--colorPrimary);
+    height: 160px;
+}
+
+
+/*Rodapé */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorDark);
+    color: var(--colorLink);
+    font-size: 14px;
+    height: 50px;
+    margin-top: 80px;
+}
+
+footer span{
+    margin-right: 5px;
+    color: var(--colorPrimary);
+}
+
+footer .copy{
+    color: var(--colorLink);
+}
+
+
+
+
+
+
+/*Login*/
+
+
+
+
+
+/*Responsivo*/
+
+@media (max-width: 1024px){
+    header .container--header{
+        padding: 50px;
+    }
+
+    main{
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 800px){
+
+    .active{
+        color: var(--colorLink);
+        border: 0;
+    }
+
+    header .menuMobile{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    header nav a:last-child{
+        display: block;
+    }
+
+    header nav ul{
+        background: var(--colorDark);
+        width: 0%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        right: 0;
+        padding-top: 100px;
+        line-height: 30px;
+        padding: 0;
+
+        
+    }
+
+   header .menuBox{
+       display: flex;
+       position: fixed;
+       width: 0%;
+       height: 100vh;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       transition: 0.5s ease-in;
+       background-color: rgba(0, 0, 0, 0.7);
+   }
+
+
+    header .menuMobile{
+        display: flex;
+        position: fixed;
+        top: 6%;
+        z-index: 1;
+    }
+    main .services{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*Sumindo com menu desktop*/
+
+    header .login{
+        display: none;
+    }
+}
+
+@media (max-width: 450px){
+
+    header .menuMobile{
+        position: absolute;
+        right: 9%;
+        top: 5%;
+    }
+
+    main .services{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    main .card--Services{
+        padding: 50px;
+    }
+
+    header .login{
+        display: none;
+    }
+
+    .box--header{
+        height: 80px;
+    }
+
+    footer{
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 320px){
+
+    header .menuMobile{
+        position: absolute;
+        right: 9%;
+        top: 5%;
+    }
+    main .services{
+        padding: 20px;
+    }
+
+    header .container--header{
+        padding: 10px;
+    }
+}
